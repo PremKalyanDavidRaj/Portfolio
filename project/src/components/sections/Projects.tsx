@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ExternalLink, Github, Info } from 'lucide-react';
+import healthcareImg from '../assets/projects/healthcare.png';
 
 
 interface Project {
@@ -19,7 +20,7 @@ const projects: Project[] = [
     "id": 1,
     "title": "Healthcare Platform with Symptom Checker and Insurance Verifier",
     "description": "A healthcare web app where users can input symptoms to get AI-powered assessments and verify insurance coverage.",
-    "image": "healthcare.png",
+    "image":  "src/assets/projects/Healthcare.png",
     "technologies": ["React", "Vite", "TypeScript", "Tailwind CSS", "OpenAI API", "Node.js", "Express", "MongoDB"],
     "githubUrl": "https://github.com/PremKalyanDavidRaj/Healthcare-Platform-with-Symptom-Checker-and-Insurance-Verifier",
     "demoUrl": "",
@@ -29,7 +30,7 @@ const projects: Project[] = [
     "id": 2,
     "title": "HMS Scheduler",
     "description": "A Hospital Management System Scheduler with role-based dashboards and ICD medical code integration.",
-    image: "/assets/projects/hms.png",
+    image: "src/assets/projects/hms.png",
     "technologies": ["React", "Node.js", "Express", "MongoDB", "OpenAI API", "MUI", "JWT"],
     "githubUrl": "https://github.com/PremKalyanDavidRaj/HMSscheduler",
     "demoUrl": "",
@@ -37,19 +38,19 @@ const projects: Project[] = [
   },
   {
     "id": 3,
-    "title": "Deck Project",
-    "description": "A card deck management application built using Angular and Firebase.",
-    "image": "https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=800",
-    "technologies": ["Angular", "Firebase", "Material UI", "TypeScript"],
-    "githubUrl": "https://github.com/PremKalyanDavidRaj/Deckproject",
+    "title": "Query Plan Visualizer and Optimizer",
+    "description": "A tool to visualize and optimize SQL query execution plans, helping developers analyze performance bottlenecks and improve query efficiency.",
+    "image": "src/assets/projects/query-plan-visualizer.png",
+    "technologies": ["React", "Vite", "TypeScript", "Tailwind CSS", "Node.js", "Express", "D3.js"],
+    "githubUrl": "https://github.com/PremKalyanDavidRaj/Query-Plan-Visualizer-and-Optimizer",
     "demoUrl": "",
-    "category": "frontend"
+    "category": "fullstack"
   },
   {
     "id": 4,
     "title": "Reinforcement Learning",
     "description": "A collection of reinforcement learning algorithms implemented in Python.",
-    "image": "https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "image": "src/assets/projects/reinforcement.png",
     "technologies": ["Python", "TensorFlow", "PyTorch", "OpenAI Gym"],
     "githubUrl": "https://github.com/PremKalyanDavidRaj/reinforcement_learning",
     "demoUrl": "",
@@ -59,7 +60,7 @@ const projects: Project[] = [
     "id": 5,
     "title": "Constraint Optimization with Google OR-Tools",
     "description": "Constraint optimization problems solved using Google OR-Tools.",
-    "image": "https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "image": "src/assets/projects/OR-Tools.png",
     "technologies": ["Python", "Google OR-Tools"],
     "githubUrl": "https://github.com/PremKalyanDavidRaj/Constraint-Optimization-with-Google-OR-Tools",
     "demoUrl": "",
@@ -69,7 +70,7 @@ const projects: Project[] = [
     "id": 6,
     "title": "Iris Classifier",
     "description": "A machine learning project to classify Iris flowers using KNN and other models.",
-    "image": "https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "image": "src/assets/projects/iris.png",
     "technologies": ["Python", "Scikit-learn", "Pandas", "Matplotlib"],
     "githubUrl": "https://github.com/PremKalyanDavidRaj/iris-classifier",
     "demoUrl": "",
@@ -77,29 +78,9 @@ const projects: Project[] = [
   },
   {
     "id": 7,
-    "title": "A* Search Algorithm",
-    "description": "Implementation of A* search algorithm for pathfinding problems.",
-    "image": "https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=800",
-    "technologies": ["Python"],
-    "githubUrl": "https://github.com/PremKalyanDavidRaj/A-search-algorithm-",
-    "demoUrl": "",
-    "category": "ai"
-  },
-  {
-    "id": 8,
-    "title": "MNIST Digit Classifier with Keras",
-    "description": "Deep learning model built with Keras to classify handwritten MNIST digits.",
-    "image": "https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=800",
-    "technologies": ["Python", "Keras", "TensorFlow", "NumPy", "Matplotlib"],
-    "githubUrl": "https://github.com/PremKalyanDavidRaj/MNIST-Digit-Classifier-with-Keras",
-    "demoUrl": "",
-    "category": "ml"
-  },
-  {
-    "id": 9,
     "title": "Project Regression",
     "description": "Regression models for various predictive analysis tasks.",
-    "image": "https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "image": "src/assets/projects/ProjectRegression.png",
     "technologies": ["Python", "Scikit-learn", "Pandas", "Matplotlib", "Seaborn"],
     "githubUrl": "https://github.com/PremKalyanDavidRaj/Project-Regression-",
     "demoUrl": "",
@@ -109,7 +90,7 @@ const projects: Project[] = [
     "id": 10,
     "title": "Weather App",
     "description": "A weather forecasting application using weather APIs.",
-    "image": "https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "image": "src/assets/projects/WeatherApp.png",
     "technologies": ["React", "HTML", "CSS", "JavaScript", "Weather API"],
     "githubUrl": "https://github.com/PremKalyanDavidRaj/WeatherApp",
     "demoUrl": "",
