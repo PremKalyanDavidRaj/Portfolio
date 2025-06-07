@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ExternalLink, Github, Info } from 'lucide-react';
-import healthcareImg from '../assets/projects/healthcare.png';
 
 
 interface Project {
@@ -20,7 +19,7 @@ const projects: Project[] = [
     "id": 1,
     "title": "Healthcare Platform with Symptom Checker and Insurance Verifier",
     "description": "A healthcare web app where users can input symptoms to get AI-powered assessments and verify insurance coverage.",
-    "image":  "src/assets/projects/Healthcare.png",
+    "image":  "/assets/projects/Healthcare.png",
     "technologies": ["React", "Vite", "TypeScript", "Tailwind CSS", "OpenAI API", "Node.js", "Express", "MongoDB"],
     "githubUrl": "https://github.com/PremKalyanDavidRaj/Healthcare-Platform-with-Symptom-Checker-and-Insurance-Verifier",
     "demoUrl": "",
@@ -30,7 +29,7 @@ const projects: Project[] = [
     "id": 2,
     "title": "HMS Scheduler",
     "description": "A Hospital Management System Scheduler with role-based dashboards and ICD medical code integration.",
-    image: "src/assets/projects/hms.png",
+    image: "/assets/projects/hms.png",
     "technologies": ["React", "Node.js", "Express", "MongoDB", "OpenAI API", "MUI", "JWT"],
     "githubUrl": "https://github.com/PremKalyanDavidRaj/HMSscheduler",
     "demoUrl": "",
@@ -40,7 +39,7 @@ const projects: Project[] = [
     "id": 3,
     "title": "Query Plan Visualizer and Optimizer",
     "description": "A tool to visualize and optimize SQL query execution plans, helping developers analyze performance bottlenecks and improve query efficiency.",
-    "image": "src/assets/projects/query-plan-visualizer.png",
+    "image": "/assets/projects/query-plan-visualizer.png",
     "technologies": ["React", "Vite", "TypeScript", "Tailwind CSS", "Node.js", "Express", "D3.js"],
     "githubUrl": "https://github.com/PremKalyanDavidRaj/Query-Plan-Visualizer-and-Optimizer",
     "demoUrl": "",
@@ -50,7 +49,7 @@ const projects: Project[] = [
     "id": 4,
     "title": "Reinforcement Learning",
     "description": "A collection of reinforcement learning algorithms implemented in Python.",
-    "image": "src/assets/projects/reinforcement.png",
+    "image": "/assets/projects/reinforcement.png",
     "technologies": ["Python", "TensorFlow", "PyTorch", "OpenAI Gym"],
     "githubUrl": "https://github.com/PremKalyanDavidRaj/reinforcement_learning",
     "demoUrl": "",
@@ -60,7 +59,7 @@ const projects: Project[] = [
     "id": 5,
     "title": "Constraint Optimization with Google OR-Tools",
     "description": "Constraint optimization problems solved using Google OR-Tools.",
-    "image": "src/assets/projects/OR-Tools.png",
+    "image": "/assets/projects/OR-Tools.png",
     "technologies": ["Python", "Google OR-Tools"],
     "githubUrl": "https://github.com/PremKalyanDavidRaj/Constraint-Optimization-with-Google-OR-Tools",
     "demoUrl": "",
@@ -70,7 +69,7 @@ const projects: Project[] = [
     "id": 6,
     "title": "Iris Classifier",
     "description": "A machine learning project to classify Iris flowers using KNN and other models.",
-    "image": "src/assets/projects/iris.png",
+    "image": "/assets/projects/iris.png",
     "technologies": ["Python", "Scikit-learn", "Pandas", "Matplotlib"],
     "githubUrl": "https://github.com/PremKalyanDavidRaj/iris-classifier",
     "demoUrl": "",
@@ -80,7 +79,7 @@ const projects: Project[] = [
     "id": 7,
     "title": "Project Regression",
     "description": "Regression models for various predictive analysis tasks.",
-    "image": "src/assets/projects/ProjectRegression.png",
+    "image": "/assets/projects/ProjectRegression.png",
     "technologies": ["Python", "Scikit-learn", "Pandas", "Matplotlib", "Seaborn"],
     "githubUrl": "https://github.com/PremKalyanDavidRaj/Project-Regression-",
     "demoUrl": "",
@@ -90,7 +89,7 @@ const projects: Project[] = [
     "id": 10,
     "title": "Weather App",
     "description": "A weather forecasting application using weather APIs.",
-    "image": "src/assets/projects/WeatherApp.png",
+    "image": "/assets/projects/WeatherApp.png",
     "technologies": ["React", "HTML", "CSS", "JavaScript", "Weather API"],
     "githubUrl": "https://github.com/PremKalyanDavidRaj/WeatherApp",
     "demoUrl": "",
